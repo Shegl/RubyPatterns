@@ -14,7 +14,7 @@ class BankAccount
   end
 
   def who_am_i
-    puts "hello im #{self}"
+    puts "hello im #{self} and my name is #{@owner}"
   end
   #def balance #Depricated since attr_accessor
   #  @balance
