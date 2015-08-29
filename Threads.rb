@@ -21,6 +21,8 @@ thread2 = Thread.new do
   puts "The product of the first 10 integers is #{product}"
 end
 
+puts "My threads is #{Thread.list}"
+
 until result == 2
   thread1.join 0.0005
   thread2.join 0.0005
