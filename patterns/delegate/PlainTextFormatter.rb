@@ -1,6 +1,4 @@
-require './Formatter'
-
-class PlainTextFormatter < Formatter
+class PlainTextFormatter
   def output_report(title, text)
     puts "*** #{title} ***"
     text.each do |line|

@@ -1,6 +1,4 @@
-require './Formatter'
-
-class HTMLFormatter < Formatter
+class HTMLFormatter
   def output_report(title, text)
     puts('<html>')
     puts('  <head>')
