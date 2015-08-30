@@ -21,7 +21,6 @@ class Report
   end
 
   def output_start
-    raise "Called abstract method: output_start"
   end
 
   def output_head
@@ -29,15 +28,12 @@ class Report
   end
 
   def output_body_start
-    raise "Called abstract method: output_body_start"
   end
 
   def output_body_end
-    raise "Called abstract method: output_body_end"
   def
 
   def output_end
-    raise 'Called abstract method: output_end'
   end
-  
+
 end end
