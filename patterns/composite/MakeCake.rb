@@ -7,9 +7,9 @@ require './FillPan'
 class MakeCake < CompositeTask
   def initialize
     super('Make Batter')
-    add_sub_task(MakeBatterTask.new)
-    add_sub_task(FillPan.new)
-    add_sub_task(Bake.new)
-    add_sub_task(Frost.new)
+    self[0] = MakeBatterTask.new
+    self[1] = FillPan.new
+    self << Bake.new
+    self.add_sub_task Frost.new
   end
 end
